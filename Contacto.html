@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bienes Raíces</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+              <a href="/">
+              <img src="img/logo.svg" alt="Logotipo de Bienes Raices"></a>
+
+              <div class="mobile-menu">
+                <a href="#navegacion"><img src="img/barras.svg" alt="Barras"></a>
+              </div>
+
+
+              <nav id="navegacion" class="navegacion">
+                <a href="Nosotros.html">Nosotros</a>
+                <a href="Anuncios.html">Anuncios</a>
+                <a href="Blog.html">Blog</a>
+                <a href="Contacto.html">Contacto</a>
+            </nav>
+        </div> <!--contenedor -->
+    </div>
+   </header>
+
+    <h1 class="fw-300 centrar-texto">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="Imagen principal">
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+        <form action="">
+            <fieldset>
+                <legend>Informacion personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" placeholder="Tu nombre">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" placeholder="Tu correo electonico" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" placeholder="Tu telefono" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje">Hola...</textarea>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Informacion sobre propiedad</legend>
+                <label for="opciones">Vende o compra</label>
+                <select id="">
+                    <option value="--Seleccione--" disabled selected>--Seleccione--</option>
+                    <option value="Compra">Compra</option>
+                    <option value="Vende">Venta</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" min="0" max="100" step="2">
+
+            </fieldset>
+            <fieldset>
+                <legend>Contacto</legend>  
+                    <p>Como desea ser contactado</p>
+                    <div class="forma-contacto">
+                    <label for="Telefono">Teléfono</label>
+                    <input type="radio" name="contacto" id="telefono">
+                    <label for="correo">E-mail</label>
+                    <input type="radio" name="contacto" id="correo">
+                </div>
+                    <p>Si elegió telefono, indique fecha y hora.</p>
+                    <label for="fecha">Fecha:</label>
+                    <input type="date" id="fecha">
+
+                    <label for="hora">Hora</label>
+                    <input type="time" id="hora" min="09:00" max="18:00">
+            </fieldset>
+            
+            <input type="submit" class="botones boton-verde">
+
+        </form>
+    </main>
+
+    <footer class="site-footer seccion">
+      <div class="contenedor contenedor-footer">
+      <nav class="navegacion">
+        <a href="Nosotros.html">Nosotros</a>
+        <a href="Anuncios.html">Anuncios</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Contacto.html">Contacto</a>
+      </nav>
+      <p class="copyright">Esta página ha sido desarrolada por Nahuel Savedra &copy; </p>
+      </div>
+    </footer>
+</body>
+</html>
